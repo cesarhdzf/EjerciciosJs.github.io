@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectivos Compuestos</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/validar3.js"></script>
+</head>
+<body oncopy="return false " onpaste="return false">
+    <div class="header">
+        <header>
+          <nav>
+            <ul>
+                <li><a href="./index.html">Volver</a></li>
+                <li><a href="./primeraParte.html">Problemas Secuenciales</a></li>
+            </ul>
+          </nav>
+    </header></div>
+<div class="contenedor3">
+    <div class="p7">
+        <form method="get" name="formulario7" action="">
+        <h2>Problema 7:</h2>
+        <label>Leer 2 numeros; si son iguales que los multiplique, si el primero es 
+        mayor que el segundo que haga una potencia si el segundo es mayor que el primero que los divida</label>
+        <div class="table-container7">
+            <table id="table7" class="tabla77">
+                <tr>
+                    <td align="right">Primer número: </td>
+                    <td><input type="number" id="Numero1" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td align="right">Segundo número: </td>
+                    <td><input type="number" id="Numero2" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="ingresar" onclick="return validar7()" value="Calcular">
+                <input type="button" name="borr" value="Borrar" onclick="return borrar7()"></td>
+                </tr>
+                <tr><td align="right">Resultado de la operación:</td>
+                    <td> <input type="text" id="operacion" readonly="readonly" class="input_text"> </td>
+    
+                </tr>
+            </table></div>
+        </form>
+</div>
+
+<div class="p8">
+    <form method="get" name="formulario8" action="">
+    <h2>Problema 8:</h2>
+    <label>Leer tres numeros diferentes e imprimir el numero mayor de los tres. </label>
+        <div class="table-container8">
+            <table id="table8" class="tabla88">
+                <tr>
+                    <td align="right">Primer número: </td>
+                    <td><input type="number" id="1Numero" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td align="right">Segundo número: </td>
+                    <td><input type="number" id="2Numero" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td align="right">Tercer número: </td>
+                    <td><input type="number" id="3Numero" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="ingresar" onclick="return validar8()" value="Comparar">
+                <input type="button" name="borr" value="Borrar" onclick="return borrar8()"></td>
+                </tr>
+                <tr><td align="right">El mas grande es:</td>
+                    <td> <input type="text" id="resultado" readonly="readonly" class="input_text"> </td>
+    
+                </tr>
+    </table></div>
+    </form>
+</div>
+<div class="p9">
+    <form method="get" name="formulario9" action="">
+    <h2>Problema 9:</h2>
+    <label>Determinar la cantidad de dinero que recibirá un trabajador por concepto de las horas extras trabajadas en una empresa,
+     sabiendo que cuando las horas de trabajo exceden de 40, el resto se consideran horas extras y que estas se pagan al doble de una hora normal cuando no exceden de 8; 
+    si las horas extras exceden de 8 se pagan las primeras 8 al doble de lo que se pagan las horas normales y el resto al triple. </label>
+        <div class="table-container9">
+            <table id="table9" class="tabla99">
+                <tr>
+                    <td align="right">Ingresa el dinero que te pagan por hora: </td>
+                    <td><input type="number" id="Dinero" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td align="right">Ingresa el total de horas que trabajaste: </td>
+                    <td><input type="number" id="Horas" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="ingresar" onclick="return validar9()" value="Calcular">
+                <input type="button" name="borr" value="Borrar" onclick="return borrar9()"></td>
+                </tr>
+                <tr><td align="right">Tu salario total es de:</td>
+                    <td> <input type="text" id="total" readonly="readonly" class="input_text"> </td>
+                </tr>
+    </table></div>
+    </form>
+</div>
+<div class="p10">
+    <form method="get" name="formulario10" action="">
+    <h2>Problema 10:</h2>
+    <label>Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le 
+        asigna como un porcentaje de su salario mensual que depende de su antigüedad en la empresa de acuerdo a lo siguiente:
+        <ol>
+            <li>Menos de 1 año:	5% del salario</li>
+            <li>1 año o más y menos de 2 años: 7% del salario</li>
+            <li>2 años o más y menos de 5 años: 10% del salario</li>
+            <li>5 años o más y menos de 10 años: 15% del salario</li>
+            <li>10 años o más: 20% del salario</li>
+        </ol> 
+    </label>
+        <div class="table-container10">
+            <table id="table10" class="tabla100">
+                <tr>
+                    <td align="right">Ingresa el salario: </td>
+                    <td><input type="number" id="Salario" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td align="right">Años que llevas en la empresa: </td>
+                    <td><input type="number" id="anos" onkeypress="return validarn(event)" min="0"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="ingresar" onclick="return validar10()" value="Calcular">
+                <input type="button" name="borr" value="Borrar" onclick="return borrar10()"></td>
+                </tr>
+                <tr><td align="right">Utilidad:</td>
+                    <td> <input type="text" id="resultado1" readonly="readonly" class="input_text"> </td>
+    
+                </tr>
+    </table></div>
+    </form>
+</div>
+</div>
+</body>
+</html>
